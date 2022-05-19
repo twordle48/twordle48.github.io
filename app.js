@@ -173,7 +173,7 @@ function rightNoGreenNoGray() {
 function rightWithGray(){
     for (let i = 0; i < width*height; i = i + 5){
         checkBoard()
-        if (divs[i+2].style.backgroundColor == "grey" && divs[i+3].style.backgroundColor != "grey" && divs[i+4].style.backgroundColor != "grey" && divs[i+5].style.backgroundColor != "grey"  && divs[i+6].style.backgroundColor != "grey" ){
+        if (divs[i+2].style.backgroundColor == "grey" && divs[i+3].style.backgroundColor != "grey" && divs[i+4].style.backgroundColor != "grey" && divs[i+5].style.backgroundColor != "grey"){
             let spotTwo = squares[i+1].innerHTML
             let spotThree = squares[i+2].innerHTML
             let spotFour = squares[i+3].innerHTML
@@ -213,7 +213,7 @@ function rightWithGray(){
                     break;
             }   
         }
-        if (divs[i+3].style.backgroundColor == "grey" && divs[i+4].style.backgroundColor != "grey" && divs[i+5].style.backgroundColor != "grey"  && divs[i+6].style.backgroundColor != "grey" ){
+        if (divs[i+3].style.backgroundColor == "grey" && divs[i+4].style.backgroundColor != "grey" && divs[i+5].style.backgroundColor != "grey"){
             let spotThree = squares[i+2].innerHTML
             let spotFour = squares[i+3].innerHTML
             let spotFive = squares[i+4].innerHTML
@@ -242,7 +242,7 @@ function rightWithGray(){
                     break;
             }   
         }
-        if (divs[i+2].style.backgroundColor != "grey" && divs[i+3].style.backgroundColor != "grey" && divs[i+4].style.backgroundColor == "grey" && divs[i+5].style.backgroundColor != "grey"  && divs[i+6].style.backgroundColor != "grey" ){
+        if (divs[i+2].style.backgroundColor != "grey" && divs[i+3].style.backgroundColor != "grey" && divs[i+4].style.backgroundColor == "grey" && divs[i+5].style.backgroundColor != "grey"){
             let spotFour = squares[i+3].innerHTML
             let spotFive = squares[i+4].innerHTML
             let row = [spotFour,spotFive];
