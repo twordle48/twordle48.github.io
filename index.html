@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en"  dir="ltr">
+<body>
+<head>
+    <meta charset="utf-8">
+     <title>Twordle48</title>
+     <h1 class="title">Twordle48</h1>
+     <link rel="stylesheet" href="style.css"> 
+     <script type = "module" src= "app.js" chartset="utf-8"></script>
+</head>
+    <div class= "results"></div>
+     <div class="grid"></div>
+    <div class ="key-container"></div>
+    <div class="popup" id="popup"> 
+        <h2>You Won!</h2>
+        <p>thank you for playing!</p>
+        <button type="button" onclick="closePopup()">close</button>
+    </div>
+   
+    <canvas id="my-canvas"></canvas>
+
+   <script>
+    function closePopup(){
+        popup.classList.remove("open-popup");
+    }
+    </script>
+
+</body>
+</html>
