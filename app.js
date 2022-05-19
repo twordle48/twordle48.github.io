@@ -1835,6 +1835,7 @@ function downWithGrayAndGreen(){
                 case 3:
                     squares[i + 17].innerHTML = filteredRow[0];
                     squares[i + 22].innerHTML = filteredRow[1];
+                    squares[i + 27].innerHTML = filteredRow[2];
                     break;
                 case 2:
                     squares[i + 17].innerHTML = '';
@@ -1923,7 +1924,7 @@ function downWithGrayAndGreen(){
         if (divs[i+2].style.backgroundColor == "green" && divs[i+12].style.backgroundColor != "grey" && divs[i+17].style.backgroundColor == "grey" && divs[i+22].style.backgroundColor != "grey"){
             let spotTwo = squares[i + 22].innerHTML
             let spotThree = squares[i + 27].innerHTML
-            let row = [spotOne,spotTwo,spotThree];
+            let row = [spotTwo,spotThree];
             let filteredRow = row.filter(row => row != '')
             switch (filteredRow.length){
                 case 2:
@@ -1963,8 +1964,8 @@ function downWithGrayAndGreen(){
             let spotThree = squares[i+10].innerHTML
             let spotFour = squares[i+15].innerHTML
             let spotFive = squares[i+20].innerHTML
-            let spotOne = squares[i + 25].innerHTML
-            let row = [spotOne,spotTwo,spotThree,spotFour, spotFive];
+            let spotSix = squares[i + 25].innerHTML
+            let row = [spotTwo,spotThree,spotFour,spotFive,spotSix];
             let filteredRow = row.filter(row => row != '')
             switch (filteredRow.length){
                 case 5:
