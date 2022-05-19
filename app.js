@@ -815,7 +815,7 @@ function leftWithGray(){
                     break;
             }
         }
-        if ( divs[i+3].style.backgroundColor == "grey" && divs[i+4].style.backgroundColor != "grey" && divs[i+5].style.backgroundColor != "grey" && divs[i+6].style.backgroundColor == "grey"){
+        if (divs[i+3].style.backgroundColor == "grey" && divs[i+4].style.backgroundColor != "grey" && divs[i+5].style.backgroundColor != "grey" && divs[i+6].style.backgroundColor == "grey"){
             let spotOne = squares[i + 2].innerHTML
             let spotTwo = squares[i + 3].innerHTML
             let row = [spotOne,spotTwo];
@@ -855,7 +855,27 @@ function leftWithGray(){
                     break;
             }
         }
-        if ((divs[i+2].style.backgroundColor != "grey" || divs[i+3].style.backgroundColor != "grey") && divs[i+4].style.backgroundColor == "grey" && divs[i+5].style.backgroundColor != "grey"  && divs[i+6].style.backgroundColor != "grey" ){
+        if ((divs[i+2].style.backgroundColor == "grey" || divs[i+3].style.backgroundColor == "grey") && divs[i+4].style.backgroundColor == "grey" && divs[i+5].style.backgroundColor != "grey"  && divs[i+6].style.backgroundColor != "grey" ){
+            let spotFour = squares[i + 3].innerHTML
+            let spotFive = squares[i + 4].innerHTML
+            let row2 = [spotFour,spotFive];
+            let filteredRow2 = row2.filter(row => row != '')
+            switch (filteredRow2.length){
+                case 2:
+                    squares[i + 3].innerHTML = filteredRow2[0];
+                    squares[i + 4].innerHTML = filteredRow2[1];
+                    break;
+                case 1:
+                    squares[i + 3].innerHTML = filteredRow2[0];
+                    squares[i + 4].innerHTML = '';
+                    break;
+                case 0:
+                    squares[i + 3].innerHTML = '';
+                    squares[i + 4].innerHTML = '';
+                    break;
+            }
+        }
+        if (divs[i+2].style.backgroundColor == "grey" && divs[i+3].style.backgroundColor == "grey" && divs[i+4].style.backgroundColor == "grey" && divs[i+5].style.backgroundColor != "grey"  && divs[i+6].style.backgroundColor != "grey" ){
             let spotFour = squares[i + 3].innerHTML
             let spotFive = squares[i + 4].innerHTML
             let row2 = [spotFour,spotFive];
