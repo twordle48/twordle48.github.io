@@ -85,12 +85,8 @@ function createBoard() {
     generate()
     word = wordList[Math.floor(Math.random() * wordList.length)].split('')
     word = word.map(word => word.toUpperCase());
-    console.log(word)
 }
 createBoard()
-console.log(squares)
- //random grid
-  
 
 function generate() {
       let randomNumber = Math.floor(Math.random() * 20 + 10)
