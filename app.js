@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'J',
         'K',
         'L',
-        'ENTER',
+        'New Game',
         'Z',
         'X',
         'C',
@@ -41,6 +41,9 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('clicked', letter)
         if (letter == 'New Letter'){
             generate();
+        }
+        if (letter == 'New Game'){
+            createBoard();
         }
         if(letter == '←'){
             moveLeft();
