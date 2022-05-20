@@ -172,6 +172,7 @@ function rightNoGreenNoGray() {
 
 function rightWithGray(){
     for (let i = 0; i < width*height; i = i + 5){
+        checkBoard()
         if (divs[i+2].style.backgroundColor == "grey" && divs[i+3].style.backgroundColor != "grey" && divs[i+4].style.backgroundColor != "grey" && divs[i+5].style.backgroundColor != "grey"){
             let spotTwo = squares[i+1].innerHTML
             let spotThree = squares[i+2].innerHTML
@@ -393,6 +394,7 @@ function rightWithGray(){
 
 function rightWithGreen(){
     for (let i = 0; i < width*height; i = i + 5){
+        checkBoard()
         if (divs[i+2].style.backgroundColor == "green" && divs[i+3].style.backgroundColor != "green" && divs[i+4].style.backgroundColor != "green" && divs[i+5].style.backgroundColor != "green"){
             let spotTwo = squares[i+1].innerHTML
             let spotThree = squares[i+2].innerHTML
@@ -679,6 +681,7 @@ function leftNoGreenNoGray() {
 
 function leftWithGray(){
     for (let i = 0; i < width*height; i= i+5){
+        checkBoard()
         if (divs[i+3].style.backgroundColor != "grey" && divs[i+4].style.backgroundColor != "grey" && divs[i+5].style.backgroundColor != "grey"  && divs[i+6].style.backgroundColor == "grey" ){
             let spotOne = squares[i].innerHTML
             let spotTwo = squares[i+1].innerHTML
@@ -900,6 +903,7 @@ function leftWithGray(){
 
 function leftWithGreen(){
     for (let i = 0; i < width*height; i= i+5){
+        checkBoard()
         if (divs[i+3].style.backgroundColor != "green" && divs[i+4].style.backgroundColor != "green" && divs[i+5].style.backgroundColor != "green"  && divs[i+6].style.backgroundColor == "green"){
             let spotOne = squares[i].innerHTML
             let spotTwo = squares[i+1].innerHTML
@@ -1200,6 +1204,7 @@ function upNoGreenNoGray() {
 
 function upWithGray(){
     for (let i=0; i < 5; i++) {
+        checkBoard()
         if ( divs[i+12].style.backgroundColor != "grey" && divs[i+17].style.backgroundColor != "grey" && divs[i+22].style.backgroundColor != "grey" && divs[i+27].style.backgroundColor == "grey"){
             let spotOne = squares[i].innerHTML
             let spotTwo = squares[i+5].innerHTML
@@ -1685,6 +1690,7 @@ function downNoGreenNoGray() {
 
 function downWithGrayAndGreen(){
     for (let i = 0; i < 5; i++){
+        checkBoard()
         if (divs[i+2].style.backgroundColor != "green" && divs[i+12].style.backgroundColor != "grey" && divs[i+17].style.backgroundColor != "grey" && divs[i+22].style.backgroundColor == "grey"){
             let spotOne = squares[i].innerHTML
             let spotTwo = squares[i+5].innerHTML
