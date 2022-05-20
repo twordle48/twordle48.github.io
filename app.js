@@ -1954,7 +1954,7 @@ function downWithGrayAndGreen(){
                     squares[i + 25].innerHTML = filteredRow[2];
                     break;
                 case 2:
-                    squares[i + 10].innerHTML = '';
+                    squares[i + 15].innerHTML = '';
                     squares[i + 20].innerHTML = filteredRow[0];
                     squares[i + 25].innerHTML = filteredRow[1];
                     break;
