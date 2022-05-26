@@ -42,9 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (letter == 'New Letter'){
             generate();
         }
-        if (letter == 'New Letter'){
-            generate();
-        }
         if(letter == '←'){
             moveLeft();
             checkBoard();
